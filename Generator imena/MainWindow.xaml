@@ -1,0 +1,32 @@
+﻿<Window x:Class="Generator_imena.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Generator_imena"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="425" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="181*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="205*"/>
+            <ColumnDefinition Width="212*"/>
+        </Grid.ColumnDefinitions>
+        <RichTextBox x:Name="spisak_imena" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="212" Grid.Column="1" Grid.RowSpan="4" HorizontalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto">
+            <FlowDocument>
+
+            </FlowDocument>
+        </RichTextBox>
+        <RadioButton x:Name="muska" Content="Muška imena" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <RadioButton x:Name="zenska" Content="Ženska imena" Grid.Row="1" RenderTransformOrigin="-2.639,0.722" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="generisi" Content="Generiši" HorizontalAlignment="Left" Margin="66,87,0,0" Grid.Row="2" VerticalAlignment="Top" Width="76" Height="30" Click="generisi_Click"/>
+        <Button x:Name="sacuvaj" Content="Sačuvaj" HorizontalAlignment="Left" Margin="67,155,0,0" Grid.Row="2" VerticalAlignment="Top" Width="76" Height="30" Click="sacuvaj_Click"/>
+        <TextBox x:Name="broj_imena" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="185" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Unesi broj imena:" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
